@@ -3,7 +3,8 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'git checkout master'
+        sh '''git branch
+git fetch origin'''
       }
     }
 
