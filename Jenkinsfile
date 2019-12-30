@@ -3,10 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh '''
-git checkout master
-git branch
-echo "DONE"'''
+        sh 'git checkout master'
       }
     }
 
